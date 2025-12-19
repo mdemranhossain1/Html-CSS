@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        nav{
+            border: 2px solid salmon;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+
+            a{
+                text-decoration: none;
+                color: teal;
+            }
+        }
+        .form{
+            border: 2px solid salmon;
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            padding: 10px;
+            gap: 10px;
+            input[type="email"], input[type="password"]{
+                padding: 5px;
+                border: 2px dashed teal;
+            }
+            input[type="submit"]{
+                padding: 5px;
+                border: 2px solid teal;
+                background-color: salmon;
+                color: white;
+                cursor: pointer;
+            }
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            max-width: 400px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Service</a>
+        <a href="">Contact</a>
+        <a href="">Login</a>
+    </nav>
+   <section class="container">
+     <div class="form">
+        <input type="email" name="email" id="placeholder" placeholder="Enter your email">
+        <input type="password" name="password" id="placeholder" placeholder="Enter your password">
+        <input type="submit" value="login">
+    </div>
+   </section>
+</body>
+</html>
