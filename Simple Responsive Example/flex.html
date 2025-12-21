@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flex</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        .box{
+            background-color: blue;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .container2{
+            display: flex;
+            flex-direction: column;
+            word-wrap: wrap;
+            background-color: aliceblue;
+            gap: 20px;
+            border-radius: 20px;
+        }
+        @media  screen and (max-width:576px) {
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Flexible Flex</h2>
+    <div class="container">
+    <div class="box">
+        <h3>First Box</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum facilis adipisci, magnam nulla aliquid neque saepe dolores fugiat illo consequatur laudantium provident id! In eos optio quis quasi, aut qui.</p>
+
+    </div>
+    <div class="box">
+        <h3>Second Box</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum facilis adipisci, magnam nulla aliquid neque saepe dolores fugiat illo consequatur laudantium provident id! In eos optio quis quasi, aut qui.</p>
+
+    </div>
+    </div>
+    <div class="container2">
+        <div class="item">Banna</div>
+        <div class="item">Mango</div>
+        <div class="item">juice</div>
+        <div class="item">jackfruit</div>
+        <div class="item">orange</div>
+        <div class="item">sweet</div>
+        
+    </div>
+
+</body>
+</html>
